@@ -20,9 +20,12 @@ of them launch a new instance of tdlib-json-cli via a
 Add the following to your `mix.exs` :
 
 ```
-<!-- def deps do
-  [{:tdlib, "~> 0.0.2"}]
-end -->
+def deps do
+  [
+    {:elixir_make, "~> 0.7", runtime: false},
+    {:ex_tdlib, github: "Vickordon/ex_tdlib"}
+  ]
+end 
 ```
 
 Note that compiling this project will compile Telegram's TDLib (C++) itself,
